@@ -1,0 +1,36 @@
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-light .navbar-brand{
+		margin-left: 15px;
+	}
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+	.top-navbar .navbar-light .navbar-nav .nav-link {
+		
+		padding: 5px 0px;
+		padding-left: 10px;
+		border-radius: 4px;
+		font-size: 20px;
+	}
+	#testimonial4 .fa {
+		bottom: 12rem;
+		
+	}
+	.cover-slides h1{
+		font-size: 22px;
+	}
+	.cover-slides p {
+		font-size: 14px;
+	}
+	.slides-navigation a{
+		height: 42px;
+		width: 38px;
+		line-height: 33px;
+	}
+	.inner-column{
+		margin-top: 15px;
+	}
+
+}

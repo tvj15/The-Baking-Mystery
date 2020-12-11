@@ -1,0 +1,63 @@
+{%extends 'website/base.html'%}
+{% load static %}
+    
+    {% block link %}    
+  <link href="https://fonts.googleapis.com/css2?family=Courgette" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+  <link href="{% static 'css/gallery.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  {% endblock %}
+{% block content %}
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+    <div class="container">
+        <div class="title " style="padding-top: 60px;">
+            <span class="subtitle">Discover</span>
+            <h2>Our Gallery</h2>
+            <i class="fa fa-spoon"></i>              
+            <span class="title-bar"></span>
+        </div>
+    </div>
+   
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="portfolio-container">
+            {% for object in gallery %}
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail">
+              <a class="popup-img" href="{{ object.image.url }}">
+                <img src="{{ object.image.url }}" alt="img">
+              </a>
+              <div class="card">
+                <h2 class="card-title">{{ object.name }}</h2>
+              </div>
+            </div>
+            {% endfor %}
+            
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {% endblock %}
+
+{% block scripts %}
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+  <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

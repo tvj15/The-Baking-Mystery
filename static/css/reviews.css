@@ -1,0 +1,211 @@
+body {
+  
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover{
+  color: #f0b8b4!important;
+}
+ .navbar-light .navbar-nav .nav-item.active .nav-link{
+  color: #f0b8b4!important;
+
+}
+.heading
+{       
+    display: block;
+    text-align: center;
+    padding-top: 120px;
+    
+
+}
+.heading .subtitle {
+  font-size: 60px;
+  color: #f0b8b4;
+  font-family: "Tangerine", cursive;
+  line-height: 30px;
+  font-weight: 600;
+}
+.heading h2 {
+  color:#343a40;
+  font-size: 35px;
+  margin-bottom: 5px;
+  font-family: 'Kaushan Script', cursive;
+}
+.heading i {
+  font-size: 18px;
+  color:#f0b8b4;
+
+}
+.heading .title-bar {
+  position: relative;
+}
+.heading .title-bar::before {
+  content: "";
+  height: 2px;
+  left: 8px;
+  position: absolute;
+  top: 10px;
+  width: 100px;
+  background-color: #f0b8b4;
+}
+.heading .title-bar::after {
+  content: "";
+  height: 2px;
+  right: 20px;
+  position: absolute;
+  top: 10px;
+  width: 100px;
+  background-color: #f0b8b4;
+  }
+
+.review
+{
+  background: url('../images/slider/4.jpg');
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-top:10px;
+}
+.card-review
+{
+    margin-top:10px;
+}
+img.records_img1 {
+  position: relative;
+top: -15.5px;
+max-width: 100%;
+}
+
+img.records_img {
+  position: relative;
+  bottom: -41.8px;
+  max-width: 100%;
+  transform: rotate(180deg);
+}
+.card-message {
+  margin: 10px;
+  min-width: 220px;
+  background-color: white;
+  height:100%;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+.card-message:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.card * {
+  box-sizing: border-box;
+}
+.card-message p {
+  margin: 0;
+  display: block;
+  position: relative;
+  padding: 30px 50px 65px 50px;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0 0 -50px;
+  line-height: 1.6em;
+  font-family: 'Lato', sans-serif;
+}
+.card-message p:before,
+.card-message p:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+.card-message p:before {
+  top: 35px;
+  left: 20px;
+}
+.card-message p:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 35px;
+}
+.card-message h4
+{
+    text-align: right;
+    padding: 10px;
+    font-family: 'Courgette', cursive;
+}
+
+/* 
+=======================================
+Owl carousel
+=======================================
+ */
+
+ .owl{
+   margin-top: 10px;
+ }
+
+ .owl-nav button {
+  position: absolute;
+  top: 40%;
+  background-color: #343a40;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+  display: none;
+}
+.owl-nav button.owl-next {
+  right: 0;
+  display: none;
+}
+.owl-lazy 
+{
+  height: 350px;
+  width: 100%;
+  border-radius: 8px;
+  border:2px solid #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19);
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #343a40;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+#carousel-row{
+  height:25rem;
+}
+/* .card-body
+{
+  padding: 0px !important;
+}
+.card-title
+{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Courgette', cursive;
+} */

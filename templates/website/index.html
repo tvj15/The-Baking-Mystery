@@ -1,0 +1,195 @@
+{%extends 'website/base.html'%}
+{% load static %}
+
+{% block link %}        
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+            <link rel="stylesheet" href="css/responsive.css">
+{% endblock %}
+
+
+{% block content %}
+	<!-- Start slides -->
+	<div id="slides" class="cover-slides">
+		<ul class="slides-container">
+			<li class="text-center">
+				<img src="{% static 'images/slider/1.jpg' %}" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="carousel-title">Welcome</span>
+							<h2 class="next-title">To The Baking Mystery</h2>
+							<p class="carousel-discr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem, deleniti optio.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="{% static 'images/slider/2.jpg' %}" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="carousel-title">The Real</span>
+							<h2 class="next-title">Creamy Cakes</h2>
+							<p  class="carousel-discr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem, deleniti optio.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="{% static 'images/slider/3.jpg' %}" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<span class="carousel-title">Delecious</span>
+					        <h2 class="next-title">Cupcakes</h2>
+							<p  class="carousel-discr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem accusamus non quidem, deleniti optio.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- End slides -->
+	 <!-- Start About us -->
+	 <section id="about-us">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <div class="about-us-area">
+				<div class="title">
+				  <span class="subtitle">Discover</span>
+				  <h2>About Us</h2>
+				  <i class="fa fa-spoon"></i>              
+				  <span class="title-bar"></span>
+				</div>
+				<div class="row">
+				  <div class="col-md-6">
+					<div class="about-us-left">
+					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minus aliquid, itaque illum assumenda repellendus dolorem, dolore numquam totam saepe, porro delectus, libero enim odio quo. Explicabo ex sapiente sit eligendi, facere voluptatum! Quia vero rerum sunt porro architecto corrupti eaque corporis eum, enim soluta, perferendis dignissimos, repellendus, beatae laboriosam.</p>                              
+					  <ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia.</li>                    
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia.</li>
+					  </ul>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque similique molestias est quod reprehenderit, quibusdam nam qui, quam magnam. Ex.</p>  
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="about-us-right">                
+					 <div class="about-images">
+						<img class="about-main" height="400" width="400" src="{% static 'images/about-us/abtus-img-1.jpg' %}" alt="About Main Image">
+						<img class="about-inset" height="180" width="180" src="{% static 'images/about-us/abtus-img-2.jpg' %}" alt="About Inset Image">
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <!-- End About us -->
+
+	  <!-- Start About us -->
+	 <section id="popular">
+		<div class="title">
+			<span class="subtitle">Discover</span>
+			<h2>Most Popular Creations</h2>
+			<i class="fa fa-spoon"></i>              
+			<span class="title-bar"></span>
+		  </div>
+			<div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="special-item">
+						<img class="rounded-circle" alt="100x100" src="{% static 'images/popular-cake/cake.jpg' %}">
+                        <h4>Cakes and CupCakes</h4>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-sm-6">
+                    <div class="special-item">
+						<img class="rounded-circle" alt="100x100" src="{% static 'images/popular-cake/chocolates.jpg' %}" >
+                        <h4>Chocolates</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="special-item">
+						<img class="rounded-circle" alt="100x100" src="{% static 'images/popular-cake/tart.jpg' %}">
+                        <h4>Tarts</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="special-item"> 
+						<img class="rounded-circle" alt="100x100" src="{% static 'images/popular-cake/customized-cake.jpg' %}">
+                        <h4 class="text-center">Customized Cake</h4>
+                    </div>
+				</div>
+            </div>
+		</div>
+	</div>
+</section>
+	  <section id="testimonial">
+		<div class="title pt-5">
+			<span class="subtitle" style="color:#e46e65;">Reviews</span>
+			<h2>What Customer Says ?</h2>
+			<i class="fa fa-spoon"  style="color:#e46e65;"></i>              
+			<span class="title-bar" style="color:#e46e65!important;"></span>
+		  </div>
+		  <img src="{% static 'images/slider/desing-1.png' %}" class="records_img2">
+        <div class="container">
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3500" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                	{% for obj in reviews %}
+                	{% if forloop.first %}
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                          
+                            <p>{{ obj.review }}</p>
+                            <h4>~{{ obj.name }}</h4>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="carousel-item ">
+                        <div class="testimonial4_slide">
+                          
+                            <p>{{ obj.review }}</p>
+                            <h4>~{{ obj.name }}</h4>
+                        </div>
+                    </div>
+                    {% endif %}                    
+                    {% endfor %}
+				</div>
+				<a class="carousel-control-prev" href="#testimonial4" role="button" data-slide="prev">
+					<i class="fa fa-chevron-left" style="font-size:24px"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4"  role="button" data-slide="next" style="color: black;">
+                    <i class="fa fa-chevron-right" style="font-size:24px"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}	
+
+{% block scripts %}	
+	<!-- ALL JS FILES -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="{% static 'js/jquery.superslides.min.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script>
+
+{% endblock %}

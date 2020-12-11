@@ -1,0 +1,73 @@
+{%extends 'website/base.html'%}
+{% load static %}
+        
+{% block link %} 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+   <title>The Baking Mystery | Testimonials</title>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reviews.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="heading">
+        <div class="container">
+            <span class="subtitle">Reviews</span>
+            <h2>What Customer Says ?</h2>
+      <i class="fa fa-spoon"></i>              
+      <span class="title-bar"></span>
+        </div>
+    </div>  
+     <section id="review " class="review">
+        <img src="{% static 'images/slider/desing-1.png' %}" class="records_img1">
+        {% if image_reviews.count > 0 %}
+        <div class="owl">
+          <div class="row mx-3" id="carousel-row">
+              <div class="col-12">
+                <div id="carousel" class="owl-carousel">
+                {% for objects in image_reviews %}
+                  <div class="items   m-3">
+                      <img class="owl-lazy"  data-src="{{ objects.image.url }}" alt="review">
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+        </div>
+        {% endif %}
+      <div class="card-review">
+        <div class="container">
+               <div class="row ">
+                  {% for obj in reviews %}
+                    <div class="col-sm-6 col-lg-4 d-flex mt-4 mb-2 justify-content-center">
+                        <div class="card-message">
+                              <p>{{ obj.review }}</p>
+                              <h4>~{{ obj.name }}</h4>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+            </div>
+        </div>
+      </div>
+    </div>
+    <img src="{% static 'images/slider/desing-1.png' %}" class="records_img">
+</section>
+{% endblock %}
+
+{% block scripts %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script src="{% static 'js/reviews.js' %}"></script>
+{% endblock %} 

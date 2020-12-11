@@ -1,0 +1,155 @@
+
+
+body {
+    
+   
+    line-height: 1.80857;
+}
+
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+    transition: all .3s ease-in-out;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+    outline: none;
+}
+ul, li, ol{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.top-navbar{
+	position: relative;
+	z-index: 10;
+}
+
+ .navbar{
+	position: fixed;
+	width: 100%;
+	transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
+	transform: translate3d(0, 0, 0);
+	z-index: 100;
+}
+ .navbar-light .navbar-nav .nav-link{
+	color: #fff !important;
+	font-size: 18px;
+	padding: 0px 20px;
+	border-radius: 4px;
+	font-family: 'Lato', sans-serif;
+}
+
+ .navbar-light .navbar-nav .nav-item .nav-link:hover{
+	color: #f0b8b4 !important;
+}
+ .navbar-light .navbar-nav .nav-item.active .nav-link{
+	color: #f0b8b4 !important;
+
+}
+/* Set the border color */ 
+          
+.navbar-toggler { 
+	border-color: white !important; 
+} 
+/* Setting the stroke to green using rgb values (0, 128, 0) */ 
+  
+ .navbar-toggler-icon { 
+	background-image: url( "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important; 
+} 
+@media (max-width: 768px) 
+{
+	.navbar-light .navbar-nav .nav-link
+	{
+		padding: 5px;
+	}
+}
+
+/*------------------------------------------------------------------
+    Scroll UP
+-------------------------------------------------------------------*/
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f0b8b4;
+    color: #343a40;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+	font-size: 20px;
+}
+
+/*------------------------------------------------------------------
+    Footer
+-------------------------------------------------------------------*/
+
+#footer {
+	background-color: #343a40;
+	float: left;
+	padding: 40px 0;
+	width: 100%;
+  }
+  
+.footer-area {
+	
+	text-align: center;
+  }
+  
+.footer-social {
+	
+	text-align: center;
+	margin-bottom: 10px;
+  }
+  
+.footer-social a {
+	background-color: #555;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	height: 45px;
+	line-height: 47px;
+	margin: 5px;
+	text-align: center;
+	width: 45px;
+	transition: all 0.5s;
+}
+.footer-social a:hover
+{
+	transform: rotate(360deg);
+	color: #f0b8b4;
+} 
+.footer-copyright {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.footer-copyright p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.footer-copyright  a {
+	color: #f0b8b4;
+	font-family: 'Courgette', cursive;
+  }
